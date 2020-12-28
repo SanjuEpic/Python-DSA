@@ -1,5 +1,4 @@
-# Online Python compiler (interpreter) to run Python online.
-# Write Python 3 code in this online editor and run it.
+# This code contains the basic operations of the set data structure in python 
 print("************ Welcome to Sets *************")
 string='hello_all'
 S=set()
