@@ -5,8 +5,8 @@ def LongSubstr(st):
     s=set()
     # s={} this notation creates an empty dictionary
     # Be cautious of sets and dict
-    for word in st:
-        s.add(word)
+    for char in st:
+        s.add(char)
     for i in  range(0,len(st)-len(s)):
         x=set()
         x.update(st[i:i+len(s)])
@@ -16,3 +16,5 @@ print(LongSubstr('abcdabc'))
 print(LongSubstr(''))
 print(LongSubstr('aaanbfdfedd'))
 # time complexity of O(n)
+# expected output: in terms of length
+# 4  0 5
