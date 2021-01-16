@@ -10,13 +10,8 @@ def Trav(root, right_visited):
     if right_visited!=True:
         arr.append(root.value)
     if root.left!= None:
-        no_left=False
         arr+=Trav(root.left, False)
-    else:
-        no_left=True
-    if root.right!=None and no_left:
-        arr+=Trav(root.right, False)
-    elif root.right!=None and no_left!=True:
+    if root.right!=None:
         arr+=Trav(root.right, True)
     return arr
 # creation of a binary tree manually
